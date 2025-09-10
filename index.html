@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Mood Machine</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <div class="my-mood">
+      <h1>روزهای سخت:</h1>
+      <select id="mood">
+        <option value="" disabled selected>حال و هوای من ...</option>
+        <option value="sad">غمگین</option>
+        <option value="angry">عصبانی</option>
+        <option value="stress">مضطرب</option>
+        <option value="scared">ترسیده</option>
+        <option value="shame">شرمگین</option>
+      </select>
+    </div>
 
+    <button type="button">چیکار کنم؟</button>
+
+    <ul></ul>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

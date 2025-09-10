@@ -1,5 +1,104 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* ریست اولیه */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Tahoma", sans-serif;
+  background: #f0f2f5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* باکس انتخاب حال و هوا */
+.my-mood {
+  max-width: 250px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 15px;
+  background: #f7f7f7;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.my-mood h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.my-mood select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.my-mood select:hover {
+  border-color: #666;
+}
+
+.my-mood select:focus {
+  border-color: #2196f3;
+  box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
+}
+
+/* دکمه */
+.actions {
+  margin-top: 15px;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #f7f7f7;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background: #e0e0e0;
+  border-color: #666;
+}
+
+button:active {
+  background: #d0d0d0;
+}
+
+/* لیست پیشنهادها */
+ul {
+  margin-top: 20px;
+  max-width: 250px;
+  width: 100%;
+  padding: 15px;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  list-style: none;
+  display: none; /* اول مخفی */
+}
+
+ul li {
+  padding: 8px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+  color: #333;
+}
+
+ul li:last-child {
+  border-bottom: none;
 }
